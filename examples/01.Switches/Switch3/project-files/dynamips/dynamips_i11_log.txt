@@ -1,0 +1,28 @@
+Oct 10 18:21:54.105 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 10 18:21:54.106 HYPERVISOR: Started on IP = localhost, TCP port = 62693.
+Oct 10 18:21:54.409 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 10 18:21:54.409 HYPERVISOR: exec_cmd: hypervisor working_dir D:\scripts\gns3\Router1\Router3\project-files\dynamips 
+Oct 10 18:21:54.532 GENERAL: working_dir=D:\scripts\gns3\Router1\Router3\project-files\dynamips
+Oct 10 18:21:54.533 HYPERVISOR: exec_cmd: hypervisor working_dir D:\scripts\gns3\Router1\Router3\project-files\dynamips\d9e352bc-caf5-4938-9151-570f4f4250c9 
+Oct 10 18:21:54.534 GENERAL: working_dir=D:\scripts\gns3\Router1\Router3\project-files\dynamips\d9e352bc-caf5-4938-9151-570f4f4250c9
+Oct 10 18:21:54.534 HYPERVISOR: exec_cmd: vm create ESW1 1 c3725 
+Oct 10 18:21:54.535 VM: VM ESW1 created.
+Oct 10 18:21:54.536 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5000 
+Oct 10 18:21:54.537 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Oct 10 18:21:54.538 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/Administrador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 10 18:21:54.539 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 10 18:21:54.539 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60c086a8 
+Oct 10 18:21:54.540 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Oct 10 18:21:54.541 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+Oct 10 18:21:54.541 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Oct 10 18:21:54.542 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Oct 10 18:21:54.542 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 10 18:21:54.543 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Oct 10 18:21:54.637 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/Administrador/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 10 18:22:26.881 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 10 18:22:26.885 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 10 18:22:26.886 HYPERVISOR: exec_cmd: vm delete ESW1 
+Oct 10 18:22:26.886 VM: VM ESW1 destroyed.
+Oct 10 18:22:26.888 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 10 18:22:26.937 HYPERVISOR: Stopped.
+Oct 10 18:22:26.937 GENERAL: reset done.

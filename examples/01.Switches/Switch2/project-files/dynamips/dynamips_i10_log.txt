@@ -1,0 +1,48 @@
+Oct 10 17:31:37.518 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 10 17:31:37.519 HYPERVISOR: Started on IP = localhost, TCP port = 54785.
+Oct 10 17:31:38.007 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 10 17:31:38.008 HYPERVISOR: exec_cmd: hypervisor working_dir D:\scripts\gns3\Switch4\project-files\dynamips 
+Oct 10 17:31:38.008 GENERAL: working_dir=D:\scripts\gns3\Switch4\project-files\dynamips
+Oct 10 17:31:38.009 HYPERVISOR: exec_cmd: hypervisor working_dir D:\scripts\gns3\Switch4\project-files\dynamips\1cb597d6-faa1-4d8d-a4c2-574d90b58ddc 
+Oct 10 17:31:38.009 GENERAL: working_dir=D:\scripts\gns3\Switch4\project-files\dynamips\1cb597d6-faa1-4d8d-a4c2-574d90b58ddc
+Oct 10 17:31:38.010 HYPERVISOR: exec_cmd: vm create ESW2 2 c3600 
+Oct 10 17:31:38.011 VM: VM ESW2 created.
+Oct 10 17:31:38.012 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5009 
+Oct 10 17:31:38.013 HYPERVISOR: exec_cmd: c3600 get_mac_addr ESW2 
+Oct 10 17:31:38.013 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Oct 10 17:31:38.014 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+Oct 10 17:31:38.014 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:31:38.014 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x605f2458 
+Oct 10 17:31:38.016 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/Administrador/GNS3/images/IOS/c3640-ik9o3s-mz.124-25b.image 
+Oct 10 17:31:38.017 HYPERVISOR: exec_cmd: c3600 set_mac_addr ESW2 cc02.23d0.0000 
+Oct 10 17:31:38.018 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Oct 10 17:31:38.018 HYPERVISOR: exec_cmd: vm set_ram ESW2 192 
+Oct 10 17:31:38.019 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:31:38.019 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 0 0 NM-1FE-TX 
+Oct 10 17:31:38.020 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:31:38.020 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Oct 10 17:31:39.526 HYPERVISOR: exec_cmd: nio create_udp udp-1cce2683-d2db-4b72-ba7b-911dc88f1718 10010 127.0.0.1 10011 
+Oct 10 17:31:39.768 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 0 udp-1cce2683-d2db-4b72-ba7b-911dc88f1718 
+Oct 10 17:31:39.768 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:31:39.874 HYPERVISOR: exec_cmd: nio create_udp udp-d6d8387f-7f72-4b7a-aa06-4e4178e5a2e4 10014 127.0.0.1 10015 
+Oct 10 17:31:39.878 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 1 udp-d6d8387f-7f72-4b7a-aa06-4e4178e5a2e4 
+Oct 10 17:31:39.879 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:31:39.997 HYPERVISOR: exec_cmd: nio create_udp udp-3bdfdcff-0f50-4e07-b82c-b98f74e706b4 10020 127.0.0.1 10021 
+Oct 10 17:31:40.002 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 0 0 udp-3bdfdcff-0f50-4e07-b82c-b98f74e706b4 
+Oct 10 17:31:40.003 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:32:08.096 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:32:08.098 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW2 0 0 
+Oct 10 17:32:08.100 HYPERVISOR: exec_cmd: nio delete udp-3bdfdcff-0f50-4e07-b82c-b98f74e706b4 
+Oct 10 17:32:10.021 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:32:10.022 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW2 1 0 
+Oct 10 17:32:10.023 HYPERVISOR: exec_cmd: nio delete udp-1cce2683-d2db-4b72-ba7b-911dc88f1718 
+Oct 10 17:32:10.083 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:32:10.084 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW2 1 1 
+Oct 10 17:32:10.086 HYPERVISOR: exec_cmd: nio delete udp-d6d8387f-7f72-4b7a-aa06-4e4178e5a2e4 
+Oct 10 17:32:10.198 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 10 17:32:10.198 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Oct 10 17:32:10.199 HYPERVISOR: exec_cmd: vm delete ESW2 
+Oct 10 17:32:10.199 VM: VM ESW2 destroyed.
+Oct 10 17:32:10.201 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 10 17:32:10.542 HYPERVISOR: Stopped.
+Oct 10 17:32:10.542 GENERAL: reset done.
